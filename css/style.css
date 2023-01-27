@@ -42,6 +42,18 @@ UTILITY
 BUTTONS
 *************
 ***/
+button:hover {
+    cursor: pointer;
+}
+
+button {
+    border: none;
+}
+
+.primary {
+    background-color: #0061ff;
+    padding: 6px 0;
+}
 
 /***
 *************
@@ -56,8 +68,10 @@ header {
 
 nav ul {
     gap: 10px;
-    align-items: stretch;
-    line-height: 40px;
+}
+
+nav li button {
+    line-height: 60px;
 }
 
 /***
