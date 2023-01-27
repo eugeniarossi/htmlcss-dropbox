@@ -17,6 +17,8 @@ COMMON
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
 }
 
 .flex {
@@ -32,6 +34,9 @@ ul {
 DEBUG
 *************
 ***/
+img {
+    width: 100%;
+}
 
 /***
 *************
@@ -43,11 +48,12 @@ UTILITY
 }
 
 .big-container {
-    width: 70vw;
+    width: 60vw;
+    margin: 0 auto;
 }
 
 .small-container {
-    width: 60vw;
+    width: 50vw;
 }
 
 /***
@@ -61,22 +67,30 @@ button:hover {
 
 button {
     border: none;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-size: 12px;
 }
 
 .primary {
     background-color: #0061ff;
     color: white;
-    font-weight: normal;
+    padding: 6px 0;
 }
 
-.primary.s {
+.s {
     padding: 5px 15px;
+}
+
+.m {
+    width: 180px;
 }
 
 .secondary {
     background-color: white;
+}
+
+header button:not(.right-nav div button) {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
 header nav button:hover {
@@ -126,6 +140,26 @@ MAIN
 .jumbotron {
     background-color: #b4d0e7;
     height: 75vh;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 40px;
+    line-height: 75px;
+}
+
+.jumbotron > div {
+    position: relative;
+    top: 60px;
+}
+
+.jumbotron div .col-1 {
+    width: 30%;
+}
+
+.jumbotron div .col-2 {
+    width: 70%;
 }
 
 /***
