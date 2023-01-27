@@ -52,10 +52,6 @@ DEBUG
     background-color: pink;
 }
 
-.plans .small-col > * {
-    background-color: slateblue;
-}
-
 /***
 *************
 UTILITY
@@ -77,7 +73,7 @@ UTILITY
 
 .small-col {
     width: calc(100% / 3);
-    padding: 15px;
+    margin: 15px;
 }
 
 /***
@@ -203,12 +199,13 @@ h1 {
 *************
 section 2
 *************/
-.section-2 .plans .small-col > * {
+.section-2 .plans .small-col {
     border: 1px solid #d0d0d3;
 }
 
 .section-2 .plans {
-    width: 100%;
+    margin: 0 -15px;
+    justify-content: center;
 }
 
 /***
