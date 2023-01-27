@@ -21,6 +21,10 @@ body {
     line-height: 17px;
 }
 
+img {
+    width: 100%;
+}
+
 .row {
     display: flex;
 }
@@ -39,8 +43,17 @@ ul {
 DEBUG
 *************
 ***/
-img {
-    width: 100%;
+.plans .small-col {
+    height: 500px;
+    background-color: green;
+}
+
+.small-container {
+    background-color: pink;
+}
+
+.plans .small-col > * {
+    background-color: slateblue;
 }
 
 /***
@@ -58,7 +71,13 @@ UTILITY
 }
 
 .small-container {
-    width: 50vw;
+    width: 54vw;
+    margin: 0 auto;
+}
+
+.small-col {
+    width: calc(100% / 3);
+    padding: 15px;
 }
 
 /***
@@ -151,6 +170,7 @@ jumbotron
 .jumbotron {
     background-color: #b4d0e7;
     height: 78vh;
+    margin-bottom: 100px;
 }
 
 h1 {
@@ -183,6 +203,13 @@ h1 {
 *************
 section 2
 *************/
+.section-2 .plans .small-col > * {
+    border: 1px solid #d0d0d3;
+}
+
+.section-2 .plans {
+    width: 100%;
+}
 
 /***
 *************
