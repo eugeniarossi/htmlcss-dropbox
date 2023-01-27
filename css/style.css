@@ -32,15 +32,23 @@ ul {
 DEBUG
 *************
 ***/
-header {
-    background-color: blueviolet;
-}
 
 /***
 *************
 UTILITY
 *************
 ***/
+.viewport {
+    width: 100vw;
+}
+
+.big-container {
+    width: 70vw;
+}
+
+.small-container {
+    width: 60vw;
+}
 
 /***
 *************
@@ -59,13 +67,20 @@ button {
 
 .primary {
     background-color: #0061ff;
-    padding: 6px 0;
     color: white;
+    font-weight: normal;
+}
+
+.primary.s {
+    padding: 5px 15px;
 }
 
 .secondary {
     background-color: white;
-    padding: 6px 0;
+}
+
+header nav button:hover {
+    border-bottom: 2px solid black;
 }
 
 /***
@@ -78,16 +93,11 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    margin: 0 15px;
+    padding: 0 15px;
 }
 
 nav ul {
     gap: 30px;
-}
-
-nav button {
-    line-height: 60px;
-    background-color: inherit;
 }
 
 nav > .logo {
@@ -98,11 +108,25 @@ nav .logo > img {
     width: 80%;
 }
 
+nav button:not(.right-nav div button) {
+    background-color: inherit;
+    line-height: 60px;
+}
+
+.right-nav div {
+    align-items: center;
+    margin-left: 20px;
+}
+
 /***
 *************
 MAIN
 *************
 ***/
+.jumbotron {
+    background-color: #b4d0e7;
+    height: 75vh;
+}
 
 /***
 *************
