@@ -17,12 +17,17 @@ COMMON
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 13px;
+    line-height: 17px;
 }
 
-.flex {
+.row {
     display: flex;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
 }
 
 ul {
@@ -48,7 +53,7 @@ UTILITY
 }
 
 .big-container {
-    width: 60vw;
+    width: 63vw;
     margin: 0 auto;
 }
 
@@ -67,12 +72,17 @@ button:hover {
 
 button {
     border: none;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .primary {
     background-color: #0061ff;
     color: white;
+    padding: 9px 0;
+}
+
+.secondary {
+    background-color: white;
     padding: 6px 0;
 }
 
@@ -81,11 +91,7 @@ button {
 }
 
 .m {
-    width: 180px;
-}
-
-.secondary {
-    background-color: white;
+    width: 175px;
 }
 
 header button:not(.right-nav div button) {
@@ -137,30 +143,46 @@ nav button:not(.right-nav div button) {
 MAIN
 *************
 ***/
+
+/***
+*************
+jumbotron
+*************/
 .jumbotron {
     background-color: #b4d0e7;
-    height: 75vh;
+    height: 78vh;
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 65px;
     font-weight: 900;
     margin-bottom: 40px;
     line-height: 75px;
 }
 
-.jumbotron > div {
+.jumbotron > section {
     position: relative;
-    top: 60px;
+    top: 70px;
 }
 
-.jumbotron div .col-1 {
+.jumbotron section .col-1 {
     width: 30%;
+    gap: 25px;
 }
 
-.jumbotron div .col-2 {
+.jumbotron section .col-2 {
     width: 70%;
 }
+
+.jumbotron section .col-1 i {
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+/***
+*************
+section 2
+*************/
 
 /***
 *************
