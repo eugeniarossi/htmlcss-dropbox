@@ -48,14 +48,21 @@ ul {
 }
 
 h2 {
-    font-size: 29px;
+    font-size: 30px;
     margin-bottom: 60px;
+    line-height: 40px;
 }
 
 h3 {
     font-size: 19px;
     margin-bottom: 18px;
     line-height: 23px;
+}
+
+.hr-small {
+    margin-top: 35px;
+    width: 48px;
+    border: 1px solid #d0d0d3;
 }
 
 /***
@@ -85,12 +92,12 @@ UTILITY
 }
 
 .big-container {
-    max-width: 1180px;
+    width: 1180px;
     margin: 0 auto;
 }
 
 .small-container {
-    max-width: 1000px;
+    width: 1000px;
     margin: 150px auto 0;
 }
 
@@ -121,10 +128,22 @@ UTILITY
 }
 
 .small-box {
-    width: 30%;
+    width: 40%;
 }
 
 .big-box {
+   width: 60%;
+}
+
+.half-box {
+    width: 50%;
+}
+
+.col-1 {
+    width: 30%;
+}
+
+.col-2 {
     width: 70%;
 }
 
@@ -148,7 +167,7 @@ button {
 
 .secondary {
     background-color: white;
-    padding: 9px 0;
+    padding: 11px 0;
 }
 
 .secondary > a {
@@ -177,7 +196,7 @@ a {
     font-family: 'Open Sans', sans-serif;
 }
 
-a:not(.link-acquista-ora, .team > a) {
+a:not(.link-acquista-ora, .team a) {
     text-decoration: none;
 }
 
@@ -187,7 +206,7 @@ header nav li:hover {
 }
 
 .link-acquista-ora,
-.section-4 .team > a {
+.section-4 .team a {
     color: #0000ee;
 }
 
@@ -251,11 +270,11 @@ h1 {
     top: 100px;
 }
 
-.jumbotron section .small-box {
+.jumbotron section .col-1 {
     gap: 25px;
 }
 
-.jumbotron section .small-box i {
+.jumbotron section .col-1 i {
     font-size: 43px;
     position: relative;
     top: 120px;
@@ -300,12 +319,6 @@ section 2
     margin-bottom: 30px;
 }
 
-hr {
-    margin-top: 35px;
-    width: 48px;
-    border: 1px solid #d0d0d3;
-}
-
 .section-2 .col-content .punti-salienti h4 {
     margin-bottom: 30px;
 }
@@ -336,12 +349,7 @@ hr {
 *************
 section 3
 *************/
-.section-3 .img-box {
-    max-width: 60%;
-} 
-
 .section-3 .content-box {
-    max-width: 40%;
     padding: 50px;
 }
 
@@ -429,6 +437,14 @@ section 5
     background-color: #ffd830;
 }
 
+.porta-dropbox h2 {
+    margin: 0px;
+}
+
+.porta-dropbox button.secondary {
+    width: 296px;
+}
+
 .porta-dropbox {
     background-color: #b4d0e7;
     height: 358px;
@@ -441,8 +457,69 @@ section 5
     justify-content: space-between;
 }
 
+.porta-dropbox h2 {
+    color: #61082b;
+}
+
+/***
+*************
+section 6
+*************/
+.section-6 {
+    margin-bottom: 150px;
+}
+
+.section-6 .faq hr {
+    color: #999999;
+    width: 100%;
+}
+
+.section-6 .faq div.row {
+    margin: 30px 0;
+    justify-content: space-between;
+}
+
+.section-6 .faq div.row > i {
+    padding: 0 40px;
+}
+
 /***
 *************
 FOOTER
 *************
 ***/
+footer {
+    background-color: black;
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+footer .footer-container {
+    width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+footer .footer-columns .col {
+    width: calc(100% / 5);
+}
+
+footer .footer-columns {
+    margin: 100px 0;
+}
+
+footer a {
+    color: inherit;
+}
+
+footer hr {
+    width: 120px;
+}
+
+footer .lang {
+    color: #999999;
+}
+
+footer .lang > div {
+    margin: 50px 0;
+}
