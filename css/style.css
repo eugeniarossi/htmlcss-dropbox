@@ -43,8 +43,13 @@ ul {
     list-style-type: none;
 }
 
+h2 {
+    font-size: 29px;
+    margin-bottom: 60px;
+}
+
 h3 {
-    font-size: 16px;
+    font-size: 19px;
     margin-bottom: 18px;
     line-height: 23px;
 }
@@ -82,11 +87,11 @@ UTILITY
 
 .small-container {
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 150px auto 0;
 }
 
 .small-col {
-    max-width: calc(100% / 3);
+    width: calc(100% / 3 - 50px);
     margin: 25px;
 }
 
@@ -97,6 +102,7 @@ UTILITY
 .columns {
     margin: 0 -25px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .col-header {
@@ -168,13 +174,18 @@ a {
     font-family: 'Open Sans', sans-serif;
 }
 
-a:not(.link-acquista-ora) {
+a:not(.link-acquista-ora, .team > a) {
     text-decoration: none;
 }
 
 header nav li:hover {
     border-bottom: 2px solid black;
     cursor: pointer;
+}
+
+.link-acquista-ora,
+.section-4 .team > a {
+    color: #0000ee;
 }
 
 /***
@@ -255,17 +266,9 @@ h1 {
 *************
 section 2
 *************/
-.section-2 {
-    margin-top: 160px;
-}
-
-.section-2 h2 {
-    font-size: 29px;
-}
-
 .section-2 .radio-input {
     gap: 50px;
-    margin: 70px 0 30px;
+    margin-bottom: 30px;
 }
 
 .section-2 .columns .small-col,
@@ -313,7 +316,7 @@ section 2
 }
 
 .section-2 .big-col {
-    margin: 20px 0 165px;
+    margin-top: 20px;
 }
 
 .section-2 .big-col .col-content {
@@ -335,11 +338,11 @@ section 2
 section 3
 *************/
 .section-3 .img-box {
-    width: 60%;
+    max-width: 60%;
 } 
 
 .section-3 .content-box {
-    width: 40%;
+    max-width: 40%;
     padding: 50px;
 }
 
@@ -351,6 +354,13 @@ section 3
     width: 155px;
     border: 1px solid black;
 }
+
+/***
+*************
+section 5
+*************/
+.section-5
+
 
 /***
 *************
