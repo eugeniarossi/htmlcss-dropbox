@@ -18,7 +18,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 13px;
-    line-height: 17px;
+    line-height: 18px;
     margin-top: 80px;
 }
 
@@ -43,6 +43,12 @@ ul {
     list-style-type: none;
 }
 
+h3 {
+    font-size: 16px;
+    margin-bottom: 18px;
+    line-height: 23px;
+}
+
 /***
 *************
 DEBUG
@@ -50,10 +56,13 @@ DEBUG
 ***/
 .debug .columns .small-col {
     height: 500px;
+}
+
+.debug .small-box {
     background-color: green;
 }
 
-.debug .small-container {
+.debug .big-box {
     background-color: pink;
 }
 
@@ -72,7 +81,7 @@ UTILITY
 }
 
 .small-container {
-    max-width: 54vw;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -82,7 +91,7 @@ UTILITY
 }
 
 .big-col {
-    max-width: 100%;
+    width: 100%;
 }
 
 .columns {
@@ -100,6 +109,14 @@ UTILITY
 
 .col-content {
     padding: 32px 32px 50px;
+}
+
+.small-box {
+    width: 30%;
+}
+
+.big-box {
+    width: 70%;
 }
 
 /***
@@ -122,7 +139,11 @@ button {
 
 .secondary {
     background-color: white;
-    padding: 11px 0;
+    padding: 9px 0;
+}
+
+.secondary > a {
+    color: black;
 }
 
 .s {
@@ -216,20 +237,15 @@ h1 {
     top: 100px;
 }
 
-.jumbotron section .col-1 {
-    width: 30%;
+.jumbotron section .small-box {
     gap: 25px;
 }
 
-.jumbotron section .col-2 {
-    width: 70%;
-}
-
-.jumbotron section .col-2 > img {
+.jumbotron section .big-box > img {
     height: 100%;
 }
 
-.jumbotron section .col-1 i {
+.jumbotron section .small-box i {
     font-size: 43px;
     position: relative;
     top: 120px;
@@ -249,24 +265,20 @@ section 2
 
 .section-2 .radio-input {
     gap: 50px;
-    margin: 70px 0 25px;
+    margin: 70px 0 30px;
 }
 
-.section-2 .columns .small-col {
+.section-2 .columns .small-col,
+.section-2 .big-col {
     border: 1px solid #d0d0d3;
     font-size: 12px;
-}
-
-.section-2 .small-col .col-content h3 {
-    font-size: 16px;
-    margin-bottom: 18px;
 }
 
 .section-2 .col-content .main-infos > div {
     margin-top: 10px;
 }
 
-.section-2 .col-content {
+.section-2 .small-col .col-content {
     gap: 45px;
 }
 
@@ -298,6 +310,46 @@ section 2
 
 .section-2 .col-content .punti-salienti ul i {
     color: #0061ff;
+}
+
+.section-2 .big-col {
+    margin: 20px 0 165px;
+}
+
+.section-2 .big-col .col-content {
+    justify-content: space-between;
+}
+
+.section-2 .big-col .col-content button {
+    width: 240px;
+}
+
+/*
+.section-2 .big-col .big-box p {
+    margin: 50px 0 10px;
+}
+*/
+
+/***
+*************
+section 3
+*************/
+.section-3 .img-box {
+    width: 60%;
+} 
+
+.section-3 .content-box {
+    width: 40%;
+    padding: 50px;
+}
+
+.section-3 .content-box p {
+    margin-bottom: 35px;
+}
+
+.section-3 .content-box button {
+    width: 155px;
+    border: 1px solid black;
 }
 
 /***
