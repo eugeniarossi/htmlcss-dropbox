@@ -7,46 +7,50 @@
     <title>Dropbox</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="debug">
+<body class="">
     <!--HEADER-->
     <header>
         <!--NAV-->
         <nav class="row">
             <ul class="row">
-                <li>
+                <li class="logo-li">
                     <a href="#" class="logo">
                         <img src="img/logo-small.png" alt="logo">
                     </a>
                 </li>
                 <li>
-                    <a href="#">Perchè Dropbox</a>
+                    <a href="#" alt="perchè dropbox">Perchè Dropbox</a>
                 </li>
                 <li>
-                    <a href="#">Funzioni</a>
+                    <a href="#" alt="funzioni">Funzioni</a>
                 </li>
                 <li>
-                    <a href="#">Piani e Prezzi</a>
+                    <a href="#" alt="piani">Piani e Prezzi</a>
                 </li>
             </ul>
             <ul class="row">
                 <li>
-                    <a href="#">Supporto</a>
+                    <a href="#" alt="supporto">Supporto</a>
                 </li>
                 <li>
-                    <a href="#">Contatta l'ufficio vendite</a>
+                    <a href="#" alt="ufficio vendite">Contatta l'ufficio vendite</a>
                 </li>
                 <li>
-                    <a href="#">Accedi</a>
+                    <a href="#" alt="accedi">Accedi</a>
+                </li>
+                <li class="row">
+                    <div>
+                        <button class="primary s">
+                            <a href="#" alt="inizia">Inizia</a>
+                        </button>
+                    </div>
                 </li>
             </ul>
-            <div class="row">
-                <button class="primary s">Inizia</button>
-            </div>
-        </nav>
+        </nav>    
         <!--/NAV-->
     </header>
     <!--/HEADER-->
@@ -57,15 +61,21 @@
             <section class="big-container">
                 <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
                 <div class="box row">
+                    <!--COL-1-->
                     <div class="col-1 column">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat unde corrupti, nisi voluptate nihil corporis quasi omnis sequi, dolorum dolore iste modi perferendis ullam eaque adipisci placeat quidem ducimus velit. Ullam eaque ducimus velit.</p>
-                        <button class="primary m">Inizia la tua prova gratuita</button>
+                        <button class="primary m">
+                            <a href="#" alt="prova gratuita">Inizia la tua prova gratuita</a>
+                        </button>
                         <div>Annulla in qualsiasi momento</div>
                         <i class="fa-sharp fa-solid fa-arrow-down"></i>
                     </div>
+                    <!--/COL-1-->
+                    <!--COL-2-->
                     <div class="col-2">
                         <img src="img/jumbo.png" alt="jumbo">
                     </div>
+                    <!--/COL-2-->
                 </div>
             </section>
         </div>
@@ -73,142 +83,234 @@
         <!--SECTION 2-->
         <div class="section-2 small-container">
             <h2>Trova il piano business che fa per te</h2>
-            <div class="radio-input">
-                <input type="radio" id="mensile" name="fatturazione">
-                <label for="mensile">Fatturazione mensile</label>
-                <input type="radio" id="annuale" name="fatturazione">
-                <label for="annuale">Fatturazione annuale</label>
+            <!--RADIO INPUT-->
+            <div class="radio-input row">
+                <div>
+                    <input type="radio" id="mensile" name="fatturazione">
+                    <label for="mensile">Fatturazione mensile</label>
+                </div>
+                <div>
+                    <input type="radio" id="annuale" name="fatturazione">
+                    <label for="annuale">Fatturazione annuale</label>
+                </div>
             </div>
-
+            <!--/RADIO INPUT-->
+            <!--COLUMNS ROW-->
             <div class="columns row">
+                <!--SINGOLO COLUMN-->
                 <div class="small-col">
-                    <i class="fa-solid fa-user"></i>
-                    <h6>Singolo</h6>
-                    <h3>Professional</h3>
-                    <strong>€ 12.00</strong>
-                    <div>/mese</div>
-                    <ul>
-                        <li>
-                            <i class="fa-solid fa-user"></i>
-                            <span>1 utente</span>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-folder"></i>
-                            <span>5 TB di spazio di archiviazione sicuro</span>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-share-nodes"></i>
-                            <span>Funzioni di produttività premium e condivisione file semplice e sicura</span>
-                        </li>
-                    </ul>
-                    <button class="primary">Prova gratis per 30 giorni</button>
-                    <div>oppure <a href="#" alt="acquista">acquista ora</a></div>
-                    
-                    <hr>
-
-                    <h6>Punti Salienti del piano</h6>
-                    <ul>
-                        <li>
-                            <i class="fa-solid fa-check"></i>
-                            <span>Invia file fino a 100 GB con Dropbox Transfert</span>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-check"></i>
-                            <span>Cartelle offline su dispositivi mobili</span>
-                        </li>
-                    </ul>
+                    <!--COLUMN HEADER-->
+                    <div class="col-header row">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Singolo</span>
+                    </div>
+                    <!--/COLUMN HEADER-->
+                    <!--COLUMN CONTENT-->
+                    <div class="col-content column">
+                        <div class="main-infos">
+                            <h3>Professional</h3>
+                            <strong>€ 12.00</strong>
+                            <div>/mese</div>
+                        </div>
+                        <ul>
+                            <li class="row">
+                                <div>
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <span>1 utente</span>
+                            </li>
+                            <li class="row">
+                                <div>
+                                    <i class="fa-solid fa-folder"></i>
+                                </div>
+                                <span>5 TB di spazio di archiviazione sicuro</span>
+                            </li>
+                            <li class="row">
+                                <div>
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                </div>
+                                <span>Funzioni di produttività premium e condivisione file semplice e sicura</span>
+                            </li>
+                        </ul>
+                        <div>
+                            <button class="primary">
+                                <a href="#" alt="prova gratis">Prova gratis per 30 giorni</a>
+                            </button>
+                            <div>oppure <a href="#" alt="acquista" class="link-acquista-ora">acquista ora</a></div>
+                            <hr>
+                        </div>
+                        <div class="punti-salienti">
+                            <h4>Punti Salienti del piano</h4>
+                            <ul>
+                                <li class="row">
+                                    <div>
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <div>Invia file fino a 100 GB con Dropbox Transfert</div>
+                                </li>
+                                <li class="row">
+                                    <div>
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <div>Cartelle offline su dispositivi mobili</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--/COLUMN CONTENT-->
                 </div>
+                <!--/SINGOLO COLUMN-->
+
+                <!--TEAM COLUMN-->
                 <div class="small-col">
-                    <i class="fa-solid fa-users"></i>
-                    <h6>Team</h6>
-                    <h3>Professional</h3>
-                    <strong>€ 12.00</strong>
-                    <div>/mese</div>
-
-                    <ul>
-                        <li>
-
-                            <span>1 utente</span>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-folder"></i>
-                            <span>5 TB di spazio di archiviazione sicuro</span>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-share-nodes"></i>
-                            <span>Funzioni di produttività premium e condivisione file semplice e sicura</span>
-                        </li>
-                    </ul>
-                    <button class="primary">Prova gratis per 30 giorni</button>
-                    <div>oppure <a href="#" alt="acquista">acquista ora</a></div>
-                    
-                    <hr>
-
-                    <h6>Punti Salienti del piano</h6>
-                    <ul>
-                        <li>
-                            <i class="fa-solid fa-check"></i>
-                            <span>Invia file fino a 100 GB con Dropbox Transfert</span>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-check"></i>
-                            <span>Cartelle offline su dispositivi mobili</span>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-check"></i>
-                            <span>Invia file fino a 100 GB con Dropbox Transfert</span>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-check"></i>
-                            <span>Cartelle offline su dispositivi mobili</span>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-check"></i>
-                            <span>Cartelle offline su dispositivi mobili</span>
-                        </li>
-                    </ul>
+                    <!--COLUMN HEADER-->
+                    <div class="col-header row">
+                        <i class="fa-solid fa-users"></i>
+                        <span>Team</span>
+                    </div>
+                    <!--/COLUMN HEADER-->
+                    <!--COLUMN CONTENT-->
+                    <div class="col-content column">
+                        <div class="main-infos">
+                            <h3>Advanced</h3>
+                            <strong>€ 18.00</strong>
+                            <div>/utente/mese</div>
+                        </div>
+                        <ul>
+                            <li class="row">
+                                <div>
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <span>1 utente</span>
+                            </li>
+                            <li class="row">
+                                <div>
+                                    <i class="fa-solid fa-folder"></i>
+                                </div>
+                                <span>5 TB di spazio di archiviazione sicuro</span>
+                            </li>
+                            <li class="row">
+                                <div>
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                </div>
+                                <span>Funzioni di produttività premium e condivisione file semplice e sicura</span>
+                            </li>
+                        </ul>
+                        <div>
+                            <button class="primary">
+                                <a href="#" alt="prova gratis">Prova gratis per 30 giorni</a>
+                            </button>
+                            <div>oppure <a href="#" alt="acquista" class="link-acquista-ora">acquista ora</a></div>
+                            <hr>
+                        </div>
+                        <div class="punti-salienti">
+                            <h4>Punti Salienti del piano</h4>
+                            <ul>
+                                <li class="row">
+                                    <div>
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <div>Nessun limite di spazio per i file</div>
+                                </li>
+                                <li class="row">
+                                    <div>
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <div>Cartelle offline su dispositivi mobili</div>
+                                </li>
+                                <li class="row">
+                                    <div>
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <div>Risparmio del 50% rispetto alle iscrizioni singole</div>
+                                </li>
+                                <li class="row">
+                                    <i class="fa-solid fa-check"></i>
+                                    <div>Possibilità di inserire nuovi membri del team</div>
+                                </li>
+                                <li class="row">
+                                    <div>
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <div>Gestione dei permessi in base ai ruoli</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--/COLUMN CONTENT-->
                 </div>
+                <!--/TEAM COLUMN-->
+
+                <!--ENTERPRISE COLUMN-->
                 <div class="small-col">
-                    <i class="fa-solid fa-building"></i>
-                    <h6>Singolo</h6>
-                    <h3>Professional</h3>
-                    <strong>€ 12.00</strong>
-                    <div>/mese</div>
-
-                    <ul>
-                        <li>
-
-                            <span>1 utente</span>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-folder"></i>
-                            <span>5 TB di spazio di archiviazione sicuro</span>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-share-nodes"></i>
-                            <span>Funzioni di produttività premium e condivisione file semplice e sicura</span>
-                        </li>
-                    </ul>
-                    <button class="primary">Prova gratis per 30 giorni</button>
-                    <div>oppure <a href="#" alt="acquista">acquista ora</a></div>
-                    
-                    <hr>
-
-                    <h6>Punti Salienti del piano</h6>
-                    <ul>
-                        <li>
-                            <i class="fa-solid fa-check"></i>
-                            <span>Invia file fino a 100 GB con Dropbox Transfert</span>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-check"></i>
-                            <span>Cartelle offline su dispositivi mobili</span>
-                        </li>
-                    </ul>
+                    <!--COLUMN HEADER-->
+                    <div class="col-header row">
+                        <i class="fa-sharp fa-solid fa-building"></i>
+                        <span>Azienda</span>
+                    </div>
+                    <!--/COLUMN HEADER-->
+                    <!--COLUMN CONTENT-->
+                    <div class="col-content column">
+                        <div class="main-infos">
+                            <h3>Enterprise</h3>
+                            <strong>Contattaci</strong>
+                            <div>-</div>
+                        </div>
+                        <ul>
+                            <li class="row">
+                                <div>
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div>10 o più utenti</div>
+                            </li>
+                            <li class="row">
+                                <div>
+                                    <i class="fa-solid fa-folder"></i>
+                                </div>
+                                <div>5 TB di spazio di archiviazione sicuro</div>
+                            </li>
+                            <li class="row">
+                                <div>
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                </div>
+                                <div>Funzioni di produttività premium e condivisione file semplice e sicura</div>
+                            </li>
+                        </ul>
+                        <div>
+                            <button class="primary">
+                                <a href="#" alt="prova gratis">Prova gratis per 30 giorni</a>
+                            </button>
+                            <div>oppure <a href="#" alt="acquista" class="link-acquista-ora">acquista ora</a></div>
+                            <hr>
+                        </div>
+                        <div class="punti-salienti">
+                            <h4>Punti Salienti del piano</h4>
+                            <ul>
+                                <li class="row">
+                                    <div>
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <div>Invia file fino a 100 GB con Dropbox Transfert</div>
+                                </li>
+                                <li class="row">
+                                    <div>
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <div>Cartelle offline su dispositivi mobili</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--/COLUMN CONTENT-->
                 </div>
-            </div>
+            <!--/COLUMNS ROW-->
 
-            <div class="big-col">
+
+            <!--BIG COLUMN-->
+            <div class="big-col row">
+                <i class="fa-sharp fa-solid fa-building"></i>
+
+
                 <div>
                     <h3>Enterprise</h3>
                     <strong>Contatta l'ufficio vendite per i prezzi</strong>
@@ -218,6 +320,7 @@
                     <button></button>
                 </div>
             </div>
+            <!--/BIG COLUMN-->
         </div>
         <!--/SECTION 2-->
     </main>
