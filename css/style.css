@@ -429,6 +429,17 @@ section 5
     background-color: #ffd830;
 }
 
+.porta-dropbox {
+    background-color: #b4d0e7;
+    height: 358px;
+    justify-content: center;
+    align-items: center;
+}
+
+.porta-dropbox > .small-container {
+    margin-top: 0;
+    justify-content: space-between;
+}
 
 /***
 *************
