@@ -7,49 +7,47 @@
     <title>Dropbox</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="debug">
     <!--HEADER-->
-    <header class="viewport row">
-        <!--LEFT NAV-->
+    <header>
+        <!--NAV-->
         <nav class="row">
-            <button class="logo row">
-                <img src="img/logo-small.png" alt="logo">
-            </button>
             <ul class="row">
                 <li>
-                    <button>Perchè Dropbox</button>
+                    <a href="#" class="logo">
+                        <img src="img/logo-small.png" alt="logo">
+                    </a>
                 </li>
                 <li>
-                    <button>Funzioni</button>
+                    <a href="#">Perchè Dropbox</a>
                 </li>
                 <li>
-                    <button>Piani e Prezzi</button>
+                    <a href="#">Funzioni</a>
+                </li>
+                <li>
+                    <a href="#">Piani e Prezzi</a>
                 </li>
             </ul>
-        </nav>
-        <!--/LEFT NAV-->
-        <!--RIGHT NAV-->
-        <nav class="right-nav row">
             <ul class="row">
                 <li>
-                    <button>Supporto</button>
+                    <a href="#">Supporto</a>
                 </li>
                 <li>
-                    <button>Contatta l'ufficio vendite</button>
+                    <a href="#">Contatta l'ufficio vendite</a>
                 </li>
                 <li>
-                    <button>Accedi</button>
+                    <a href="#">Accedi</a>
                 </li>
             </ul>
             <div class="row">
                 <button class="primary s">Inizia</button>
             </div>
         </nav>
-        <!--/RIGHT NAV-->
+        <!--/NAV-->
     </header>
     <!--/HEADER-->
     <!--MAIN-->
@@ -82,24 +80,24 @@
                 <label for="annuale">Fatturazione annuale</label>
             </div>
 
-            <div class="plans row">
+            <div class="columns row">
                 <div class="small-col">
+                    <i class="fa-solid fa-user"></i>
                     <h6>Singolo</h6>
                     <h3>Professional</h3>
                     <strong>€ 12.00</strong>
                     <div>/mese</div>
-
                     <ul>
                         <li>
-
+                            <i class="fa-solid fa-user"></i>
                             <span>1 utente</span>
                         </li>
                         <li>
-
+                            <i class="fa-solid fa-folder"></i>
                             <span>5 TB di spazio di archiviazione sicuro</span>
                         </li>
                         <li>
-
+                            <i class="fa-solid fa-share-nodes"></i>
                             <span>Funzioni di produttività premium e condivisione file semplice e sicura</span>
                         </li>
                     </ul>
@@ -111,17 +109,18 @@
                     <h6>Punti Salienti del piano</h6>
                     <ul>
                         <li>
-
+                            <i class="fa-solid fa-check"></i>
                             <span>Invia file fino a 100 GB con Dropbox Transfert</span>
                         </li>
                         <li>
-
+                            <i class="fa-solid fa-check"></i>
                             <span>Cartelle offline su dispositivi mobili</span>
                         </li>
                     </ul>
                 </div>
                 <div class="small-col">
-                    <h6>Singolo</h6>
+                    <i class="fa-solid fa-users"></i>
+                    <h6>Team</h6>
                     <h3>Professional</h3>
                     <strong>€ 12.00</strong>
                     <div>/mese</div>
@@ -132,11 +131,11 @@
                             <span>1 utente</span>
                         </li>
                         <li>
-
+                            <i class="fa-solid fa-folder"></i>
                             <span>5 TB di spazio di archiviazione sicuro</span>
                         </li>
                         <li>
-
+                            <i class="fa-solid fa-share-nodes"></i>
                             <span>Funzioni di produttività premium e condivisione file semplice e sicura</span>
                         </li>
                     </ul>
@@ -148,16 +147,29 @@
                     <h6>Punti Salienti del piano</h6>
                     <ul>
                         <li>
-
+                            <i class="fa-solid fa-check"></i>
                             <span>Invia file fino a 100 GB con Dropbox Transfert</span>
                         </li>
                         <li>
-
+                            <i class="fa-solid fa-check"></i>
+                            <span>Cartelle offline su dispositivi mobili</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            <span>Invia file fino a 100 GB con Dropbox Transfert</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            <span>Cartelle offline su dispositivi mobili</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
                             <span>Cartelle offline su dispositivi mobili</span>
                         </li>
                     </ul>
                 </div>
                 <div class="small-col">
+                    <i class="fa-solid fa-building"></i>
                     <h6>Singolo</h6>
                     <h3>Professional</h3>
                     <strong>€ 12.00</strong>
@@ -169,11 +181,11 @@
                             <span>1 utente</span>
                         </li>
                         <li>
-
+                            <i class="fa-solid fa-folder"></i>
                             <span>5 TB di spazio di archiviazione sicuro</span>
                         </li>
                         <li>
-
+                            <i class="fa-solid fa-share-nodes"></i>
                             <span>Funzioni di produttività premium e condivisione file semplice e sicura</span>
                         </li>
                     </ul>
@@ -185,14 +197,25 @@
                     <h6>Punti Salienti del piano</h6>
                     <ul>
                         <li>
-
+                            <i class="fa-solid fa-check"></i>
                             <span>Invia file fino a 100 GB con Dropbox Transfert</span>
                         </li>
                         <li>
-
+                            <i class="fa-solid fa-check"></i>
                             <span>Cartelle offline su dispositivi mobili</span>
                         </li>
                     </ul>
+                </div>
+            </div>
+
+            <div class="big-col">
+                <div>
+                    <h3>Enterprise</h3>
+                    <strong>Contatta l'ufficio vendite per i prezzi</strong>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore sint laboriosam sapiente.</p>
+                </div>
+                <div>
+                    <button></button>
                 </div>
             </div>
         </div>

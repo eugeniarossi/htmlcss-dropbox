@@ -15,7 +15,7 @@ COMMON
 *************
 ***/
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 13px;
     line-height: 17px;
@@ -43,7 +43,7 @@ ul {
 DEBUG
 *************
 ***/
-.plans .small-col {
+.columns .small-col {
     height: 500px;
     background-color: green;
 }
@@ -62,7 +62,7 @@ UTILITY
 }
 
 .big-container {
-    width: 63vw;
+    max-width: 1180px;
     margin: 0 auto;
 }
 
@@ -76,18 +76,17 @@ UTILITY
     margin: 15px;
 }
 
+.big-col {
+    width: 100%;
+}
+
 /***
 *************
 BUTTONS
 *************
 ***/
-button:hover {
-    cursor: pointer;
-}
-
 button {
     border: none;
-    font-size: 13px;
 }
 
 .primary {
@@ -109,13 +108,21 @@ button {
     width: 175px;
 }
 
-header button:not(.right-nav div button) {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+
+/***
+*************
+LINKS
+*************
+***/
+a {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: black;
 }
 
-header nav button:hover {
+header nav li:hover {
     border-bottom: 2px solid black;
+    cursor: pointer;
 }
 
 /***
@@ -124,31 +131,34 @@ HEADER
 *************
 ***/
 header {
-    height: 60px;
-    justify-content: space-between;
-    align-items: center;
+    height: 80px;
     background-color: white;
     padding: 0 15px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+header nav {
+    justify-content: space-between;
 }
 
 nav ul {
     gap: 30px;
 }
 
-nav > .logo {
-    align-items: center;
-}
-
 nav .logo > img {
-    width: 80%;
+    max-width: 80%;
 }
 
-nav button:not(.right-nav div button) {
+nav li a {
     background-color: inherit;
-    line-height: 60px;
+    line-height: 80px;
 }
 
-.right-nav div {
+nav div {
     align-items: center;
     margin-left: 20px;
 }
@@ -158,6 +168,9 @@ nav button:not(.right-nav div button) {
 MAIN
 *************
 ***/
+body {
+    margin-top: 80px;
+}
 
 /***
 *************
@@ -170,8 +183,7 @@ jumbotron
 }
 
 h1 {
-    font-size: 65px;
-    font-weight: 900;
+    font-size: 77px;
     margin-bottom: 40px;
     line-height: 75px;
 }
@@ -199,11 +211,11 @@ h1 {
 *************
 section 2
 *************/
-.section-2 .plans .small-col {
+.section-2 .columns .small-col {
     border: 1px solid #d0d0d3;
 }
 
-.section-2 .plans {
+.section-2 .columns {
     margin: 0 -15px;
     justify-content: center;
 }
