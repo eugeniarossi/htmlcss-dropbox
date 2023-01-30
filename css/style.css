@@ -339,11 +339,9 @@ section 2
     width: 240px;
 }
 
-/*
-.section-2 .big-col .big-box p {
+.section-2 .big-col .half-box p {
     margin: 50px 0 10px;
 }
-*/
 
 /***
 *************
@@ -479,7 +477,7 @@ section 6
     justify-content: space-between;
 }
 
-.section-6 .faq div.row > i {
+.section-6 .faq div.row > div {
     padding: 0 40px;
 }
 
