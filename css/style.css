@@ -17,13 +17,12 @@ COMMON
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 13px;
-    line-height: 18px;
     margin-top: 80px;
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
+    display: block;
 }
 
 .row {
@@ -87,17 +86,17 @@ DEBUG
 UTILITY
 *************
 ***/
-.viewport {
-    width: 100vw;
+.w-100 {
+    width: 100%;
 }
 
 .big-container {
-    width: 1180px;
+    max-width: 1180px;
     margin: 0 auto;
 }
 
 .small-container {
-    width: 1000px;
+    max-width: 1000px;
     margin: 150px auto 0;
 }
 
@@ -261,8 +260,7 @@ jumbotron
 
 h1 {
     font-size: 77px;
-    margin-bottom: 55px;
-    line-height: 95px;
+    margin-bottom: 50px;
 }
 
 .jumbotron > section {
@@ -362,29 +360,38 @@ section 3
 
 /***
 *************
-section 5
+section 5 - SQUARE
 *************/
 .section-5 {
     margin-top: 120px;
 }
 
-.section-5 .cube {
+.section-5 .square {
     width: calc(100vw / 3);
     height: calc(100vw / 3);
 }
 
-.section-5 .cube .inner-cube {
+.section-5 .square .inner-square {
     width: 50%;
     height: 50%;
+    position: relative;
 }
 
-.section-5 .cube .inner-cube,
-.section-5 .cube #designit > div.row {
+.section-5 .square .inner-square,
+.section-5 .square #designit > div.row {
     justify-content: center;
 }
 
-.cube img {
+.square img {
     width: 50%;
+}
+
+.square .inner-square img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: invert(1);
 }
 
 #designit {
@@ -410,12 +417,12 @@ section 5
     background-color: #ff1c1c;
 }
 
-.cube-center {
+.square-center {
     padding: 50px;
     background-color: #f5f5f5;
 }
 
-.cube-center p {
+.square-center p {
     margin: 35px 0;
 }
 
