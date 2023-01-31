@@ -94,7 +94,7 @@ UTILITY
     justify-content: space-between;
 }
 
-.col-header {
+.section-2 .columns header {
     padding: 10px 0;
     justify-content: center;
     gap: 5px;
@@ -194,7 +194,7 @@ header nav li:hover {
 HEADER
 *************
 ***/
-header {
+body > header {
     height: 80px;
     background-color: white;
     padding: 0 15px;
@@ -270,10 +270,8 @@ section 2
     margin-bottom: 30px;
 }
 
-.section-2 .columns .w-30,
-.section-2 .w-100 {
+.section-2 .columns > div {
     border: 1px solid #d0d0d3;
-    font-size: 12px;
 }
 
 .section-2 .col-content .main-infos > div {
@@ -308,19 +306,20 @@ section 2
     color: #0061ff;
 }
 
-.section-2 .w-100 {
+.section-2 .columns > .col:last-child {
     margin-top: 20px;
+    flex-grow: 1;
 }
 
-.section-2 .w-100 .col-content {
+.section-2 .columns .col:last-child .col-content {
     justify-content: space-between;
 }
 
-.section-2 .w-100 .col-content button {
+.section-2 .columns .col:last-child .col-content button {
     width: 240px;
 }
 
-.section-2 .w-100 .w-50 p {
+.section-2 .columns .col:last-child p {
     margin: 50px 0 10px;
 }
 
