@@ -448,13 +448,24 @@ section 5 - SQUARE
 *************
 section 6
 *************/
-.section-6 .faq hr {
+.section-6 .faq-list hr {
     color: #999999;
     width: 100%;
 }
 
-.section-6 .faq div.row {
+.section-6 .faq-list div.row {
     padding-right: 35px;
+}
+
+/***
+faq - hidden
+***/
+.section-6 .faq-list .hidden {
+    display: none;
+}
+
+.section-6 .faq-list .faq:hover + .hidden {
+    display: block;
 }
 
 /***
