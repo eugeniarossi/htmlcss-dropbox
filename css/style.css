@@ -267,7 +267,7 @@ MAIN
 
 /***
 *************
-jumbotron
+section 1 JUMBOTRON
 *************/
 .section-1 {
     margin-top: 0;
@@ -286,7 +286,7 @@ jumbotron
 
 /***
 *************
-section 2
+section 2 PLANS
 *************/
 .section-2 .columns header {
     padding: 10px 0;
@@ -341,7 +341,7 @@ section 3
 
 /***
 *************
-section 4
+section 4 BUSINESS
 *************/
 .section-4 .team {
     margin-top: 150px;
@@ -446,7 +446,7 @@ section 5 - SQUARE
 
 /***
 *************
-section 6
+section 6 - FAQ
 *************/
 .section-6 .faq-list hr {
     color: #999999;
