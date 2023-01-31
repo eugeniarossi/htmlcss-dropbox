@@ -58,12 +58,6 @@ h3 {
     line-height: 23px;
 }
 
-.hr-small {
-    margin-top: 35px;
-    width: 48px;
-    border: 1px solid #d0d0d3;
-}
-
 /***
 *************
 DEBUG
@@ -341,6 +335,12 @@ section 2
     margin: 50px 0 10px;
 }
 
+.section-2 hr {
+    margin-top: 35px;
+    border: 1px solid #d0d0d3;
+    width: 20%;
+}
+
 /***
 *************
 section 3
@@ -506,23 +506,25 @@ footer .footer-container {
 }
 
 footer .footer-columns .col {
-    width: calc(100% / 5);
+    flex-grow: 1;
 }
 
 footer .footer-columns {
     margin: 100px 0;
 }
 
-footer a {
-    color: inherit;
+footer ul li {
+    margin: 10px 0;
 }
 
+footer a,
 footer hr {
-    width: 120px;
+    color: inherit;
 }
 
 footer .lang {
     color: #999999;
+    width: 10%;
 }
 
 footer .lang > div {
