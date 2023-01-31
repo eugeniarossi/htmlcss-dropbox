@@ -121,12 +121,12 @@ section {
     margin: 150px auto;
 }
 
-article {
-    padding: 32px 32px 50px;
+article:not(.big-col article) {
+    padding: 30px 25px 50px;
 }
 
-.w-100 {
-    width: 100%;
+.big-col article {
+    padding: 30px 25px;
 }
 
 .w-30 {
@@ -149,6 +149,10 @@ article {
     width: 70%;
 }
 
+.w-100 {
+    width: 100%;
+}
+
 /***
 *************
 BUTTONS
@@ -156,6 +160,10 @@ BUTTONS
 ***/
 button {
     border: none;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 button:not(.inizia) {
@@ -196,7 +204,7 @@ button:not(.inizia) > a {
     margin: 50px auto 35px;
 }
 
-.section-2 .columns .col:last-child article button {
+.section-2 .columns .col.big-col article button {
     width: 240px;
 }
 
@@ -290,6 +298,9 @@ section 2
 
 .section-2 .columns > .col {
     border: 1px solid #d0d0d3;
+}
+
+.section-2 .columns > .col {
     margin-top: 50px;
 }
 
@@ -306,12 +317,12 @@ section 2
     color: #0061ff;
 }
 
-.section-2 .columns > .col:last-child {
+.section-2 .columns > .col.big-col {
     flex-grow: 1;
 }
 
-.section-2 .columns .col:last-child p {
-    margin: 50px 0 10px;
+.section-2 .columns .col.big-col p {
+    margin-top: 50px;
 }
 
 /***
@@ -337,6 +348,11 @@ section 4
 
 .section-4 h3 {
     margin-top: 10px;
+}
+
+.section-4 p,
+.section-2 .big-col p {
+    margin-bottom: 0;
 }
 
 /***
