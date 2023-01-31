@@ -193,6 +193,7 @@ button:not(.inizia) > a {
 
 .primary.inizia {
     padding: 5px 15px;
+    margin-right: 15px;
 }
 
 .jumbotron button {
