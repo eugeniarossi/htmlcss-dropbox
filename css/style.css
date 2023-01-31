@@ -63,7 +63,7 @@ h3 {
 DEBUG
 *************
 ***/
-.debug .columns .small-col {
+.debug .columns .w-30 {
     height: 500px;
 }
 
@@ -80,10 +80,6 @@ DEBUG
 UTILITY
 *************
 ***/
-.w-100 {
-    width: 100%;
-}
-
 .big-container {
     max-width: 1180px;
     margin: 0 auto;
@@ -94,18 +90,8 @@ UTILITY
     margin: 150px auto 0;
 }
 
-.small-col {
-    width: calc(100% / 3 - 50px);
-    margin: 25px;
-}
-
-.big-col {
-    width: 100%;
-}
-
 .columns {
-    margin: 0 -25px;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .col-header {
@@ -120,23 +106,27 @@ UTILITY
     padding: 32px 32px 50px;
 }
 
-.small-box {
-    width: 40%;
+.w-100 {
+    width: 100%;
 }
 
-.big-box {
-   width: 60%;
-}
-
-.half-box {
-    width: 50%;
-}
-
-.col-1 {
+.w-30 {
     width: 30%;
 }
 
-.col-2 {
+.w-40 {
+    width: 40%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-60 {
+    width: 60%;
+ }
+ 
+.w-70 {
     width: 70%;
 }
 
@@ -167,15 +157,11 @@ button {
     color: black;
 }
 
-.s {
+.primary.inizia {
     padding: 5px 15px;
 }
 
-.m {
-    width: 225px;
-}
-
-.small-col button {
+.section-2 .w-30 button {
     width: 100%;
     margin: 0 auto;
 }
@@ -249,7 +235,6 @@ jumbotron
 *************/
 .jumbotron {
     background-color: #b4d0e7;
-    height: 740px;
 }
 
 h1 {
@@ -262,14 +247,18 @@ h1 {
     top: 100px;
 }
 
-.jumbotron section .col-1 {
+.jumbotron section .box div.w-30 {
     gap: 25px;
 }
 
-.jumbotron section .col-1 i {
+.jumbotron section .box div.w-30 i {
     font-size: 43px;
-    position: relative;
-    top: 120px;
+    position: absolute;
+    bottom: 120px;
+}
+
+.jumbotron button {
+    width: 225px;
 }
 
 /***
@@ -281,8 +270,8 @@ section 2
     margin-bottom: 30px;
 }
 
-.section-2 .columns .small-col,
-.section-2 .big-col {
+.section-2 .columns .w-30,
+.section-2 .w-100 {
     border: 1px solid #d0d0d3;
     font-size: 12px;
 }
@@ -291,7 +280,7 @@ section 2
     margin-top: 10px;
 }
 
-.section-2 .small-col .col-content {
+.section-2 .w-30 .col-content {
     gap: 45px;
 }
 
@@ -319,19 +308,19 @@ section 2
     color: #0061ff;
 }
 
-.section-2 .big-col {
+.section-2 .w-100 {
     margin-top: 20px;
 }
 
-.section-2 .big-col .col-content {
+.section-2 .w-100 .col-content {
     justify-content: space-between;
 }
 
-.section-2 .big-col .col-content button {
+.section-2 .w-100 .col-content button {
     width: 240px;
 }
 
-.section-2 .big-col .half-box p {
+.section-2 .w-100 .w-50 p {
     margin: 50px 0 10px;
 }
 
@@ -420,6 +409,7 @@ section 5 - SQUARE
 .square-center {
     padding: 50px;
     background-color: #f5f5f5;
+    overflow-y: auto;
 }
 
 .square-center p {
