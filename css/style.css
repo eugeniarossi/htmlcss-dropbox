@@ -121,14 +121,6 @@ section {
     margin: 150px auto;
 }
 
-article:not(.big-col article) {
-    padding: 30px 25px 50px;
-}
-
-.big-col article {
-    padding: 30px 25px;
-}
-
 .w-30 {
     width: 30%;
 }
@@ -297,6 +289,14 @@ section 2 PLANS
     gap: 50px;
 }
 
+.section-2 article:not(.big-col article) {
+    padding: 30px 25px 50px;
+}
+
+.big-col article {
+    padding: 30px 25px;
+}
+
 .section-2 .columns > .col {
     border: 1px solid #d0d0d3;
 }
@@ -354,6 +354,10 @@ section 4 BUSINESS
 .section-4 p,
 .section-2 .big-col p {
     margin-bottom: 0;
+}
+
+.section-4 .columns article {
+    padding: 30px 5px;
 }
 
 /***
